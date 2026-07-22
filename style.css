@@ -192,4 +192,60 @@ img:hover {
 }
 
 /* телефоны */
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    padding: 8px 8px;
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    min-width: 40px;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: rgba(109, 109, 110, 0.9);
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-pages {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pagination-page {
+    padding: 6px 12px;
+    min-width: 36px;
+}
+
+.pagination-page.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.pagination-ellipsis {
+    color: #e5e5e5;
+    font-size: 1rem;
+    padding: 0 8px;
+}
     
